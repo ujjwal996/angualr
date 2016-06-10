@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <base href="/">
+    <title>2-side Interaction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    <!--3 css files from bootswatch-->
+    <link rel="stylesheet" href="./bower_components/bootswatch/cerulean/bootstrap.min.js">
+    <link rel="stylesheet" href="styles.css">
+    <!--4 load stamplay sdk-->
+    <script src="https://drrjhlchpvi7e.cloudfront.net/libs/stamplay-js-sdk/2.0.8/stamplay.min.js"></script>
+    <script> Stamplay.init('angular2app')</script>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <basic-page>Loading...</basic-page>
+  </body>
+</html>
